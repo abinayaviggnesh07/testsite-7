@@ -38,7 +38,7 @@ document.getElementById('addToWishlistButton').addEventListener('click', functio
 }, false);
 
 document.getElementById('addToCartButton').addEventListener('click', function() {
-  fbq('track', 'AddToCart');
+    fbq('track', 'AddToCart', {currency: 'USD', value: 10.00}, {eventID: 'dedup_01'});
 }, false);
 
 document.getElementById('checkoutButton').addEventListener('click', function() {
